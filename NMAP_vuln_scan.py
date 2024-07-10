@@ -1,4 +1,21 @@
 """
+Disclaimer:
+
+This script is intended for educational and ethical penetration testing purposes only. By using this script, you acknowledge and agree to the following:
+
+Authorization: You have explicit permission to perform security assessments and penetration tests on the target systems. Unauthorized access to any system is strictly prohibited.
+
+Legal Compliance: You understand and comply with all local, state, and federal laws regarding cybersecurity and penetration testing activities. Unauthorized or malicious use of this script may violate applicable laws.
+
+Risk Awareness: The use of exploits and vulnerability scanning tools can potentially disrupt systems or cause unintended consequences. Use this script at your own risk, and ensure you have backups and appropriate measures in place.
+
+Documentation: It is recommended to document all actions performed using this script, including findings, actions taken, and results obtained. This documentation should be kept confidential and shared only with authorized personnel.
+
+No Warranty: This script is provided "as is" without any warranty of fitness for a particular purpose or accuracy. The authors are not liable for any damages or consequences arising from the use or misuse of this script.
+
+By executing this script, you agree to these terms and conditions. If you do not agree with these terms, do not use this script.
+
+
 This script performs the following actions:
 1. Uses Nmap to scan a target host for vulnerabilities using the `-sV` and `--script vuln` options.
 2. Parses the scan results to identify any detected vulnerabilities.
