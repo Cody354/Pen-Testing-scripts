@@ -12,7 +12,8 @@ from metasploit.msfrpc import MsfRpcClient
 nm = nmap.PortScanner()
 
 # Scan the target host
-target_host = "192.168.1.100"
+#trarget_host = input("What IP would you like to scan? ")
+target_host = "192.168.1.100" # Hard code IP or coment this line out and uncoment ^^
 nm.scan(target_host, arguments="-sV --script vuln")
 
 # Parse the scan results
@@ -30,7 +31,7 @@ for host in nm.all_hosts():
                         print(f"Description: {vuln_info['description']}")
 
 # Initialize Metasploit RPC client
-client = MsfRpcClient("password")
+client = MsfRpcClient("password")# Chang password with propper password set up for Metasploit RPC (Remote Procedure Call) 
 
 # Exploit identified vulnerabilities
 for host in nm.all_hosts():
