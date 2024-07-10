@@ -41,7 +41,8 @@ logger = logging.getLogger(__name__)
 nm = nmap.PortScanner()
 
 # Scan the target host
-target_host = "10.0.2.16"  # Replace with the target IP address
+# target_host = "10.0.2.16"  # Replace with the target IP address
+target_host = input("Enter the target host IP address: ")
 logger.info(f"Scanning target host: {target_host}")
 nm.scan(target_host, arguments="-sV --script vuln")
 
