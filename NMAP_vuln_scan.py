@@ -16,7 +16,7 @@ No Warranty: This script is provided "as is" without any warranty of fitness for
 By executing this script, you agree to these terms and conditions. If you do not agree with these terms, do not use this script.
 
 
-This script performs the following actions:
+This script performs the following actions:   
 1. Uses Nmap to scan a target host for vulnerabilities using the `-sV` and `--script vuln` options.
 2. Parses the scan results to identify any detected vulnerabilities.
 3. Connects to a Metasploit RPC server to search for corresponding exploits for the identified vulnerabilities.
